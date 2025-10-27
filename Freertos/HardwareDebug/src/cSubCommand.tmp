@@ -1,0 +1,9 @@
+-Xcpu=g3m
+-I"/home/rajeshwar/tmp/projects/Freertos/FreeRTOS-Kernel/include"
+-I"/home/rajeshwar/tmp/projects/Freertos/FreeRTOS-Kernel/portable/CCRH/RH850_F1KM_S4"
+-c
+-Xobj_path="src"
+-g
+-gdb_compatible
+-lang=c99
+-Xcharacter_set=utf8

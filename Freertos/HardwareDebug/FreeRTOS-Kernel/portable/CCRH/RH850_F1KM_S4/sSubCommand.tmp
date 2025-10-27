@@ -1,0 +1,6 @@
+-Xcpu=g3m
+-c
+-Xobj_path="FreeRTOS-Kernel/portable/CCRH/RH850_F1KM_S4"
+-g
+-gdb_compatible
+-Xcharacter_set=utf8

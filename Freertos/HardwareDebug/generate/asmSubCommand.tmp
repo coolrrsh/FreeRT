@@ -1,0 +1,6 @@
+-Xcpu=g3m
+-c
+-Xobj_path="generate"
+-g
+-gdb_compatible
+-Xcharacter_set=utf8

@@ -1,0 +1,67 @@
+[
+  {
+    "directory": "/home/rajeshwar/tmp/projects/Freertos",
+    "command": "\"/usr/local/Renesas/CC-RH/V2.07.00/bin/ccrh\" -Xcpu\u003dg3m -Xmsg_lang\u003denglish -I\"/home/rajeshwar/tmp/projects/Freertos/FreeRTOS-Kernel/include\",\"/home/rajeshwar/tmp/projects/Freertos/FreeRTOS-Kernel/portable/CCRH/RH850_F1KM_S4\" -Xpreinclude\u003d\"/home/rajeshwar/tmp/projects/Freertos/FreeRTOS-Kernel/portable/CCRH/RH850_F1KM_S4/portmacro.h\" -c -Xobj_path\u003d\"/Freertos\" -g -gdb_compatible -lang\u003dc99 -Xcharacter_set\u003dutf8 \"/home/rajeshwar/tmp/projects/Freertos/FreeRTOS-Kernel/croutine.c\"",
+    "file": "/home/rajeshwar/tmp/projects/Freertos/FreeRTOS-Kernel/croutine.c"
+  },
+  {
+    "directory": "/home/rajeshwar/tmp/projects/Freertos",
+    "command": "\"/usr/local/Renesas/CC-RH/V2.07.00/bin/ccrh\" -Xcpu\u003dg3m -Xmsg_lang\u003denglish -I\"/home/rajeshwar/tmp/projects/Freertos/FreeRTOS-Kernel/include\",\"/home/rajeshwar/tmp/projects/Freertos/FreeRTOS-Kernel/portable/CCRH/RH850_F1KM_S4\" -Xpreinclude\u003d\"/home/rajeshwar/tmp/projects/Freertos/FreeRTOS-Kernel/portable/CCRH/RH850_F1KM_S4/portmacro.h\" -c -Xobj_path\u003d\"/Freertos\" -g -gdb_compatible -lang\u003dc99 -Xcharacter_set\u003dutf8 \"/home/rajeshwar/tmp/projects/Freertos/FreeRTOS-Kernel/event_groups.c\"",
+    "file": "/home/rajeshwar/tmp/projects/Freertos/FreeRTOS-Kernel/event_groups.c"
+  },
+  {
+    "directory": "/home/rajeshwar/tmp/projects/Freertos",
+    "command": "\"/usr/local/Renesas/CC-RH/V2.07.00/bin/ccrh\" -Xcpu\u003dg3m -Xmsg_lang\u003denglish -I\"/home/rajeshwar/tmp/projects/Freertos/FreeRTOS-Kernel/include\",\"/home/rajeshwar/tmp/projects/Freertos/FreeRTOS-Kernel/portable/CCRH/RH850_F1KM_S4\" -Xpreinclude\u003d\"/home/rajeshwar/tmp/projects/Freertos/FreeRTOS-Kernel/portable/CCRH/RH850_F1KM_S4/portmacro.h\" -c -Xobj_path\u003d\"/Freertos\" -g -gdb_compatible -lang\u003dc99 -Xcharacter_set\u003dutf8 \"/home/rajeshwar/tmp/projects/Freertos/FreeRTOS-Kernel/list.c\"",
+    "file": "/home/rajeshwar/tmp/projects/Freertos/FreeRTOS-Kernel/list.c"
+  },
+  {
+    "directory": "/home/rajeshwar/tmp/projects/Freertos",
+    "command": "\"/usr/local/Renesas/CC-RH/V2.07.00/bin/ccrh\" -Xcpu\u003dg3m -Xmsg_lang\u003denglish -I\"/home/rajeshwar/tmp/projects/Freertos/FreeRTOS-Kernel/include\",\"/home/rajeshwar/tmp/projects/Freertos/FreeRTOS-Kernel/portable/CCRH/RH850_F1KM_S4\" -Xpreinclude\u003d\"/home/rajeshwar/tmp/projects/Freertos/FreeRTOS-Kernel/portable/CCRH/RH850_F1KM_S4/portmacro.h\" -c -Xobj_path\u003d\"/Freertos\" -g -gdb_compatible -lang\u003dc99 -Xcharacter_set\u003dutf8 \"/home/rajeshwar/tmp/projects/Freertos/FreeRTOS-Kernel/portable/CCRH/RH850_F1KM_S4/port.c\"",
+    "file": "/home/rajeshwar/tmp/projects/Freertos/FreeRTOS-Kernel/portable/CCRH/RH850_F1KM_S4/port.c"
+  },
+  {
+    "directory": "/home/rajeshwar/tmp/projects/Freertos",
+    "command": "\"/usr/local/Renesas/CC-RH/V2.07.00/bin/ccrh\" -Xcpu\u003dg3m -Xmsg_lang\u003denglish -c -Xobj_path\u003d\"/Freertos\" -g -gdb_compatible -Xcharacter_set\u003dutf8  \"/home/rajeshwar/tmp/projects/Freertos/FreeRTOS-Kernel/portable/CCRH/RH850_F1KM_S4/portasm.s\"",
+    "file": "/home/rajeshwar/tmp/projects/Freertos/FreeRTOS-Kernel/portable/CCRH/RH850_F1KM_S4/portasm.s"
+  },
+  {
+    "directory": "/home/rajeshwar/tmp/projects/Freertos",
+    "command": "\"/usr/local/Renesas/CC-RH/V2.07.00/bin/ccrh\" -Xcpu\u003dg3m -Xmsg_lang\u003denglish -I\"/home/rajeshwar/tmp/projects/Freertos/FreeRTOS-Kernel/include\",\"/home/rajeshwar/tmp/projects/Freertos/FreeRTOS-Kernel/portable/CCRH/RH850_F1KM_S4\" -Xpreinclude\u003d\"/home/rajeshwar/tmp/projects/Freertos/FreeRTOS-Kernel/portable/CCRH/RH850_F1KM_S4/portmacro.h\" -c -Xobj_path\u003d\"/Freertos\" -g -gdb_compatible -lang\u003dc99 -Xcharacter_set\u003dutf8 \"/home/rajeshwar/tmp/projects/Freertos/FreeRTOS-Kernel/portable/MemMang/heap_4.c\"",
+    "file": "/home/rajeshwar/tmp/projects/Freertos/FreeRTOS-Kernel/portable/MemMang/heap_4.c"
+  },
+  {
+    "directory": "/home/rajeshwar/tmp/projects/Freertos",
+    "command": "\"/usr/local/Renesas/CC-RH/V2.07.00/bin/ccrh\" -Xcpu\u003dg3m -Xmsg_lang\u003denglish -I\"/home/rajeshwar/tmp/projects/Freertos/FreeRTOS-Kernel/include\",\"/home/rajeshwar/tmp/projects/Freertos/FreeRTOS-Kernel/portable/CCRH/RH850_F1KM_S4\" -Xpreinclude\u003d\"/home/rajeshwar/tmp/projects/Freertos/FreeRTOS-Kernel/portable/CCRH/RH850_F1KM_S4/portmacro.h\" -c -Xobj_path\u003d\"/Freertos\" -g -gdb_compatible -lang\u003dc99 -Xcharacter_set\u003dutf8 \"/home/rajeshwar/tmp/projects/Freertos/FreeRTOS-Kernel/queue.c\"",
+    "file": "/home/rajeshwar/tmp/projects/Freertos/FreeRTOS-Kernel/queue.c"
+  },
+  {
+    "directory": "/home/rajeshwar/tmp/projects/Freertos",
+    "command": "\"/usr/local/Renesas/CC-RH/V2.07.00/bin/ccrh\" -Xcpu\u003dg3m -Xmsg_lang\u003denglish -I\"/home/rajeshwar/tmp/projects/Freertos/FreeRTOS-Kernel/include\",\"/home/rajeshwar/tmp/projects/Freertos/FreeRTOS-Kernel/portable/CCRH/RH850_F1KM_S4\" -Xpreinclude\u003d\"/home/rajeshwar/tmp/projects/Freertos/FreeRTOS-Kernel/portable/CCRH/RH850_F1KM_S4/portmacro.h\" -c -Xobj_path\u003d\"/Freertos\" -g -gdb_compatible -lang\u003dc99 -Xcharacter_set\u003dutf8 \"/home/rajeshwar/tmp/projects/Freertos/FreeRTOS-Kernel/stream_buffer.c\"",
+    "file": "/home/rajeshwar/tmp/projects/Freertos/FreeRTOS-Kernel/stream_buffer.c"
+  },
+  {
+    "directory": "/home/rajeshwar/tmp/projects/Freertos",
+    "command": "\"/usr/local/Renesas/CC-RH/V2.07.00/bin/ccrh\" -Xcpu\u003dg3m -Xmsg_lang\u003denglish -I\"/home/rajeshwar/tmp/projects/Freertos/FreeRTOS-Kernel/include\",\"/home/rajeshwar/tmp/projects/Freertos/FreeRTOS-Kernel/portable/CCRH/RH850_F1KM_S4\" -Xpreinclude\u003d\"/home/rajeshwar/tmp/projects/Freertos/FreeRTOS-Kernel/portable/CCRH/RH850_F1KM_S4/portmacro.h\" -c -Xobj_path\u003d\"/Freertos\" -g -gdb_compatible -lang\u003dc99 -Xcharacter_set\u003dutf8 \"/home/rajeshwar/tmp/projects/Freertos/FreeRTOS-Kernel/tasks.c\"",
+    "file": "/home/rajeshwar/tmp/projects/Freertos/FreeRTOS-Kernel/tasks.c"
+  },
+  {
+    "directory": "/home/rajeshwar/tmp/projects/Freertos",
+    "command": "\"/usr/local/Renesas/CC-RH/V2.07.00/bin/ccrh\" -Xcpu\u003dg3m -Xmsg_lang\u003denglish -I\"/home/rajeshwar/tmp/projects/Freertos/FreeRTOS-Kernel/include\",\"/home/rajeshwar/tmp/projects/Freertos/FreeRTOS-Kernel/portable/CCRH/RH850_F1KM_S4\" -Xpreinclude\u003d\"/home/rajeshwar/tmp/projects/Freertos/FreeRTOS-Kernel/portable/CCRH/RH850_F1KM_S4/portmacro.h\" -c -Xobj_path\u003d\"/Freertos\" -g -gdb_compatible -lang\u003dc99 -Xcharacter_set\u003dutf8 \"/home/rajeshwar/tmp/projects/Freertos/FreeRTOS-Kernel/timers.c\"",
+    "file": "/home/rajeshwar/tmp/projects/Freertos/FreeRTOS-Kernel/timers.c"
+  },
+  {
+    "directory": "/home/rajeshwar/tmp/projects/Freertos",
+    "command": "\"/usr/local/Renesas/CC-RH/V2.07.00/bin/ccrh\" -Xcpu\u003dg3m -Xmsg_lang\u003denglish -c -Xobj_path\u003d\"/Freertos\" -g -gdb_compatible -Xcharacter_set\u003dutf8  \"/home/rajeshwar/tmp/projects/Freertos/generate/boot.asm\"",
+    "file": "/home/rajeshwar/tmp/projects/Freertos/generate/boot.asm"
+  },
+  {
+    "directory": "/home/rajeshwar/tmp/projects/Freertos",
+    "command": "\"/usr/local/Renesas/CC-RH/V2.07.00/bin/ccrh\" -Xcpu\u003dg3m -Xmsg_lang\u003denglish -c -Xobj_path\u003d\"/Freertos\" -g -gdb_compatible -Xcharacter_set\u003dutf8  \"/home/rajeshwar/tmp/projects/Freertos/generate/cstart.asm\"",
+    "file": "/home/rajeshwar/tmp/projects/Freertos/generate/cstart.asm"
+  },
+  {
+    "directory": "/home/rajeshwar/tmp/projects/Freertos",
+    "command": "\"/usr/local/Renesas/CC-RH/V2.07.00/bin/ccrh\" -Xcpu\u003dg3m -Xmsg_lang\u003denglish -I\"/home/rajeshwar/tmp/projects/Freertos/FreeRTOS-Kernel/include\",\"/home/rajeshwar/tmp/projects/Freertos/FreeRTOS-Kernel/portable/CCRH/RH850_F1KM_S4\" -c -Xobj_path\u003d\"/Freertos\" -g -gdb_compatible -lang\u003dc99 -Xcharacter_set\u003dutf8 \"/home/rajeshwar/tmp/projects/Freertos/src/Freertos.c\"",
+    "file": "/home/rajeshwar/tmp/projects/Freertos/src/Freertos.c"
+  }
+]

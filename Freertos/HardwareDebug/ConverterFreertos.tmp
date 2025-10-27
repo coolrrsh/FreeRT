@@ -1,0 +1,13 @@
+-input="Freertos.abs"  
+-form=hexadecimal 
+-output="Freertos.hex"  
+-byte_count=FF  
+-nologo 
+-nomessage 
+-end 
+-input="Freertos.abs"  
+-form=binary 
+-output="Freertos.bin"  
+-nologo 
+-nomessage 
+-exit

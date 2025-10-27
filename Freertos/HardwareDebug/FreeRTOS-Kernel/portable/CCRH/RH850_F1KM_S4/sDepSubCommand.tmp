@@ -1,0 +1,6 @@
+-Xasm_option=-MM
+-Xasm_option=-MP
+-Xcpu=g3m
+-c
+-gdb_compatible
+-Xcharacter_set=utf8

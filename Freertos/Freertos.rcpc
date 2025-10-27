@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<MicomToolCommonProjectFile Version="1.00">
+  <CreatorType Name="e2studio" Version=""/>
+  <Placeholders>
+    <PlaceholderPrefix>${</PlaceholderPrefix>
+    <PlaceholderPostfix>}</PlaceholderPostfix>
+  </Placeholders>
+  <Project Name="Freertos" Type="Application">
+    <Files>
+      <Category Name="FreeRTOS-Kernel">
+        <Path>FreeRTOS-Kernel/CMakeLists.txt</Path>
+        <Path>FreeRTOS-Kernel/History.txt</Path>
+        <Path>FreeRTOS-Kernel/croutine.c</Path>
+        <Path>FreeRTOS-Kernel/event_groups.c</Path>
+        <Path>FreeRTOS-Kernel/list.c</Path>
+        <Path>FreeRTOS-Kernel/queue.c</Path>
+        <Path>FreeRTOS-Kernel/stream_buffer.c</Path>
+        <Path>FreeRTOS-Kernel/tasks.c</Path>
+        <Path>FreeRTOS-Kernel/timers.c</Path>
+        <Category Name="include">
+          <Path>FreeRTOS-Kernel/include/CMakeLists.txt</Path>
+          <Path>FreeRTOS-Kernel/include/FreeRTOS.h</Path>
+          <Path>FreeRTOS-Kernel/include/FreeRTOSConfig.h</Path>
+          <Path>FreeRTOS-Kernel/include/StackMacros.h</Path>
+          <Path>FreeRTOS-Kernel/include/atomic.h</Path>
+          <Path>FreeRTOS-Kernel/include/croutine.h</Path>
+          <Path>FreeRTOS-Kernel/include/deprecated_definitions.h</Path>
+          <Path>FreeRTOS-Kernel/include/event_groups.h</Path>
+          <Path>FreeRTOS-Kernel/include/list.h</Path>
+          <Path>FreeRTOS-Kernel/include/message_buffer.h</Path>
+          <Path>FreeRTOS-Kernel/include/mpu_prototypes.h</Path>
+          <Path>FreeRTOS-Kernel/include/mpu_syscall_numbers.h</Path>
+          <Path>FreeRTOS-Kernel/include/mpu_wrappers.h</Path>
+          <Path>FreeRTOS-Kernel/include/newlib-freertos.h</Path>
+          <Path>FreeRTOS-Kernel/include/picolibc-freertos.h</Path>
+          <Path>FreeRTOS-Kernel/include/portable.h</Path>
+          <Path>FreeRTOS-Kernel/include/projdefs.h</Path>
+          <Path>FreeRTOS-Kernel/include/queue.h</Path>
+          <Path>FreeRTOS-Kernel/include/semphr.h</Path>
+          <Path>FreeRTOS-Kernel/include/stack_macros.h</Path>
+          <Path>FreeRTOS-Kernel/include/stream_buffer.h</Path>
+          <Path>FreeRTOS-Kernel/include/task.h</Path>
+          <Path>FreeRTOS-Kernel/include/timers.h</Path>
+        </Category>
+        <Category Name="portable">
+          <Path>FreeRTOS-Kernel/portable/CMakeLists.txt</Path>
+          <Path>FreeRTOS-Kernel/portable/readme.txt</Path>
+          <Category Name="CCRH">
+            <Category Name="RH850_F1KM_S4">
+              <Path>FreeRTOS-Kernel/portable/CCRH/RH850_F1KM_S4/port.c</Path>
+              <Path>FreeRTOS-Kernel/portable/CCRH/RH850_F1KM_S4/portasm.s</Path>
+              <Path>FreeRTOS-Kernel/portable/CCRH/RH850_F1KM_S4/portmacro.h</Path>
+            </Category>
+          </Category>
+          <Category Name="MemMang">
+            <Path>FreeRTOS-Kernel/portable/MemMang/heap_4.c</Path>
+          </Category>
+        </Category>
+      </Category>
+      <Category Name="generate">
+        <Path>generate/boot.asm</Path>
+        <Path>generate/cstart.asm</Path>
+        <Path>generate/iodefine.h</Path>
+      </Category>
+      <Category Name="src">
+        <Path>src/Freertos.c</Path>
+      </Category>
+    </Files>
+    <Device Category="com.renesas.cdt.managedbuild.renesas.ccrh.common.option.cpu.g3m" Series="RH850">R7F701442</Device>
+    <BuildOptions Name="CC-RH" Version="v2.07.00">
+      <BuildMode Active="True" Name="HardwareDebug">
+        <GeneralOptions/>
+        <CompileOptions>
+          <Option>-Xcpu=g3m</Option>
+          <Option>-I"${ProjDirPath}\FreeRTOS-Kernel\include"</Option>
+          <Option>-I"${ProjDirPath}\FreeRTOS-Kernel\portable\CCRH\RH850_F1KM_S4"</Option>
+          <Option>-c</Option>
+          <Option>-Xobj_path="$(dir $@)"</Option>
+          <Option>-g</Option>
+          <Option>-gdb_compatible</Option>
+          <Option>-lang=c99</Option>
+          <Option>-Xcharacter_set=utf8</Option>
+        </CompileOptions>
+        <AssembleOptions>
+          <Option>-Xcpu=g3m</Option>
+          <Option>-c</Option>
+          <Option>-Xobj_path="$(dir $@)"</Option>
+          <Option>-g</Option>
+          <Option>-gdb_compatible</Option>
+          <Option>-Xcharacter_set=utf8</Option>
+        </AssembleOptions>
+        <LinkOptions>
+          <Option>-form=absolute</Option>
+          <Option>-output="${ProjName}.abs"</Option>
+          <Option>-list</Option>
+          <Option>-show=symbol</Option>
+          <Option>-nooptimize</Option>
+          <Option>-start=RESET,EIINTTBL/0,.const,.INIT_DSEC.const,.INIT_BSEC.const,.text,.data/00008000,.data.R,.bss,.stack.bss/FED80000</Option>
+          <Option>-rom=.data=.data.R</Option>
+          <Option>-nologo</Option>
+          <Option>-nomessage</Option>
+          <Option>-library="/usr/local/Renesas/CC-RH/V2.07.00/lib/v850e3v5/rhf8n.lib"</Option>
+          <Option>-end</Option>
+          <Option>-form=hexadecimal</Option>
+          <Option>-output="${ProjName}.hex"</Option>
+          <Option>-byte_count=FF</Option>
+          <Option>-nologo</Option>
+          <Option>-nomessage</Option>
+          <Option>-exit</Option>
+          <PreLinker>Auto</PreLinker>
+        </LinkOptions>
+        <LibraryGenerateOptions>
+          <GenerateMode>BuildOptionChanged</GenerateMode>
+        </LibraryGenerateOptions>
+        <LinkOrder>
+          <Path>HardwareDebug\portasm.obj</Path>
+          <Path>HardwareDebug\boot.obj</Path>
+          <Path>HardwareDebug\cstart.obj</Path>
+          <Path>HardwareDebug\croutine.obj</Path>
+          <Path>HardwareDebug\event_groups.obj</Path>
+          <Path>HardwareDebug\list.obj</Path>
+          <Path>HardwareDebug\port.obj</Path>
+          <Path>HardwareDebug\heap_4.obj</Path>
+          <Path>HardwareDebug\queue.obj</Path>
+          <Path>HardwareDebug\stream_buffer.obj</Path>
+          <Path>HardwareDebug\tasks.obj</Path>
+          <Path>HardwareDebug\timers.obj</Path>
+          <Path>HardwareDebug\Freertos.obj</Path>
+        </LinkOrder>
+        <IndividualOptions Target="FreeRTOS-Kernel/croutine.c">
+          <CompileOptions>
+            <Option>-Xcpu=g3m</Option>
+            <Option>-Xpreinclude="${ProjDirPath}\FreeRTOS-Kernel\portable\CCRH\RH850_F1KM_S4\portmacro.h"</Option>
+            <Option>-c</Option>
+            <Option>-Xobj_path="$(dir $@)"</Option>
+            <Option>-g</Option>
+            <Option>-gdb_compatible</Option>
+            <Option>-lang=c99</Option>
+            <Option>-Xcharacter_set=utf8</Option>
+          </CompileOptions>
+          <AssembleOptions>
+            <Option>-I"${ProjDirPath}\FreeRTOS-Kernel\include"</Option>
+            <Option>-I"${ProjDirPath}\FreeRTOS-Kernel\portable\CCRH\RH850_F1KM_S4"</Option>
+          </AssembleOptions>
+        </IndividualOptions>
+        <IndividualOptions Target="FreeRTOS-Kernel/event_groups.c">
+          <CompileOptions>
+            <Option>-Xcpu=g3m</Option>
+            <Option>-Xpreinclude="${ProjDirPath}\FreeRTOS-Kernel\portable\CCRH\RH850_F1KM_S4\portmacro.h"</Option>
+            <Option>-c</Option>
+            <Option>-Xobj_path="$(dir $@)"</Option>
+            <Option>-g</Option>
+            <Option>-gdb_compatible</Option>
+            <Option>-lang=c99</Option>
+            <Option>-Xcharacter_set=utf8</Option>
+          </CompileOptions>
+          <AssembleOptions>
+            <Option>-I"${ProjDirPath}\FreeRTOS-Kernel\include"</Option>
+            <Option>-I"${ProjDirPath}\FreeRTOS-Kernel\portable\CCRH\RH850_F1KM_S4"</Option>
+          </AssembleOptions>
+        </IndividualOptions>
+        <IndividualOptions Target="FreeRTOS-Kernel/list.c">
+          <CompileOptions>
+            <Option>-Xcpu=g3m</Option>
+            <Option>-Xpreinclude="${ProjDirPath}\FreeRTOS-Kernel\portable\CCRH\RH850_F1KM_S4\portmacro.h"</Option>
+            <Option>-c</Option>
+            <Option>-Xobj_path="$(dir $@)"</Option>
+            <Option>-g</Option>
+            <Option>-gdb_compatible</Option>
+            <Option>-lang=c99</Option>
+            <Option>-Xcharacter_set=utf8</Option>
+          </CompileOptions>
+          <AssembleOptions>
+            <Option>-I"${ProjDirPath}\FreeRTOS-Kernel\include"</Option>
+            <Option>-I"${ProjDirPath}\FreeRTOS-Kernel\portable\CCRH\RH850_F1KM_S4"</Option>
+          </AssembleOptions>
+        </IndividualOptions>
+        <IndividualOptions Target="FreeRTOS-Kernel/portable/CCRH/RH850_F1KM_S4/port.c">
+          <CompileOptions>
+            <Option>-Xcpu=g3m</Option>
+            <Option>-Xpreinclude="${ProjDirPath}\FreeRTOS-Kernel\portable\CCRH\RH850_F1KM_S4\portmacro.h"</Option>
+            <Option>-c</Option>
+            <Option>-Xobj_path="$(dir $@)"</Option>
+            <Option>-g</Option>
+            <Option>-gdb_compatible</Option>
+            <Option>-lang=c99</Option>
+            <Option>-Xcharacter_set=utf8</Option>
+          </CompileOptions>
+          <AssembleOptions>
+            <Option>-I"${ProjDirPath}\FreeRTOS-Kernel\include"</Option>
+            <Option>-I"${ProjDirPath}\FreeRTOS-Kernel\portable\CCRH\RH850_F1KM_S4"</Option>
+          </AssembleOptions>
+        </IndividualOptions>
+        <IndividualOptions Target="FreeRTOS-Kernel/portable/CCRH/RH850_F1KM_S4/portasm.s">
+          <AssembleOptions>
+            <Option>-Xcpu=g3m</Option>
+            <Option>-c</Option>
+            <Option>-Xobj_path="$(dir $@)"</Option>
+            <Option>-g</Option>
+            <Option>-gdb_compatible</Option>
+            <Option>-Xcharacter_set=utf8</Option>
+          </AssembleOptions>
+        </IndividualOptions>
+        <IndividualOptions Target="FreeRTOS-Kernel/portable/MemMang/heap_4.c">
+          <CompileOptions>
+            <Option>-Xcpu=g3m</Option>
+            <Option>-Xpreinclude="${ProjDirPath}\FreeRTOS-Kernel\portable\CCRH\RH850_F1KM_S4\portmacro.h"</Option>
+            <Option>-c</Option>
+            <Option>-Xobj_path="$(dir $@)"</Option>
+            <Option>-g</Option>
+            <Option>-gdb_compatible</Option>
+            <Option>-lang=c99</Option>
+            <Option>-Xcharacter_set=utf8</Option>
+          </CompileOptions>
+          <AssembleOptions>
+            <Option>-I"${ProjDirPath}\FreeRTOS-Kernel\include"</Option>
+            <Option>-I"${ProjDirPath}\FreeRTOS-Kernel\portable\CCRH\RH850_F1KM_S4"</Option>
+          </AssembleOptions>
+        </IndividualOptions>
+        <IndividualOptions Target="FreeRTOS-Kernel/queue.c">
+          <CompileOptions>
+            <Option>-Xcpu=g3m</Option>
+            <Option>-Xpreinclude="${ProjDirPath}\FreeRTOS-Kernel\portable\CCRH\RH850_F1KM_S4\portmacro.h"</Option>
+            <Option>-c</Option>
+            <Option>-Xobj_path="$(dir $@)"</Option>
+            <Option>-g</Option>
+            <Option>-gdb_compatible</Option>
+            <Option>-lang=c99</Option>
+            <Option>-Xcharacter_set=utf8</Option>
+          </CompileOptions>
+          <AssembleOptions>
+            <Option>-I"${ProjDirPath}\FreeRTOS-Kernel\include"</Option>
+            <Option>-I"${ProjDirPath}\FreeRTOS-Kernel\portable\CCRH\RH850_F1KM_S4"</Option>
+          </AssembleOptions>
+        </IndividualOptions>
+        <IndividualOptions Target="FreeRTOS-Kernel/stream_buffer.c">
+          <CompileOptions>
+            <Option>-Xcpu=g3m</Option>
+            <Option>-Xpreinclude="${ProjDirPath}\FreeRTOS-Kernel\portable\CCRH\RH850_F1KM_S4\portmacro.h"</Option>
+            <Option>-c</Option>
+            <Option>-Xobj_path="$(dir $@)"</Option>
+            <Option>-g</Option>
+            <Option>-gdb_compatible</Option>
+            <Option>-lang=c99</Option>
+            <Option>-Xcharacter_set=utf8</Option>
+          </CompileOptions>
+          <AssembleOptions>
+            <Option>-I"${ProjDirPath}\FreeRTOS-Kernel\include"</Option>
+            <Option>-I"${ProjDirPath}\FreeRTOS-Kernel\portable\CCRH\RH850_F1KM_S4"</Option>
+          </AssembleOptions>
+        </IndividualOptions>
+        <IndividualOptions Target="FreeRTOS-Kernel/tasks.c">
+          <CompileOptions>
+            <Option>-Xcpu=g3m</Option>
+            <Option>-Xpreinclude="${ProjDirPath}\FreeRTOS-Kernel\portable\CCRH\RH850_F1KM_S4\portmacro.h"</Option>
+            <Option>-c</Option>
+            <Option>-Xobj_path="$(dir $@)"</Option>
+            <Option>-g</Option>
+            <Option>-gdb_compatible</Option>
+            <Option>-lang=c99</Option>
+            <Option>-Xcharacter_set=utf8</Option>
+          </CompileOptions>
+          <AssembleOptions>
+            <Option>-I"${ProjDirPath}\FreeRTOS-Kernel\include"</Option>
+            <Option>-I"${ProjDirPath}\FreeRTOS-Kernel\portable\CCRH\RH850_F1KM_S4"</Option>
+          </AssembleOptions>
+        </IndividualOptions>
+        <IndividualOptions Target="FreeRTOS-Kernel/timers.c">
+          <CompileOptions>
+            <Option>-Xcpu=g3m</Option>
+            <Option>-Xpreinclude="${ProjDirPath}\FreeRTOS-Kernel\portable\CCRH\RH850_F1KM_S4\portmacro.h"</Option>
+            <Option>-c</Option>
+            <Option>-Xobj_path="$(dir $@)"</Option>
+            <Option>-g</Option>
+            <Option>-gdb_compatible</Option>
+            <Option>-lang=c99</Option>
+            <Option>-Xcharacter_set=utf8</Option>
+          </CompileOptions>
+          <AssembleOptions>
+            <Option>-I"${ProjDirPath}\FreeRTOS-Kernel\include"</Option>
+            <Option>-I"${ProjDirPath}\FreeRTOS-Kernel\portable\CCRH\RH850_F1KM_S4"</Option>
+          </AssembleOptions>
+        </IndividualOptions>
+        <CommonOptions>
+          <IncludePathForC>-I"${ProjDirPath}\FreeRTOS-Kernel\include"</IncludePathForC>
+          <IncludePathForC>-I"${ProjDirPath}\FreeRTOS-Kernel\portable\CCRH\RH850_F1KM_S4"</IncludePathForC>
+        </CommonOptions>
+      </BuildMode>
+    </BuildOptions>
+  </Project>
+</MicomToolCommonProjectFile>
